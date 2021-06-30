@@ -1,0 +1,17 @@
+<div class="todos">
+	<form (submit)="addYorum()">
+		<input 
+			type="text"
+			name="inputTodo"
+			placeholder="Yorum Giriniz.."
+			class="todo-input"
+			[(ngModel)]="inputYorum"
+		/>
+		<input type="submit" value="Yorum Ekle" class="todo-submit" />
+	</form>
+	<div *ngFor="let todo of yorum; let i = index;" class="todo {{ (todo.completed ? 'done' : '') }}">
+		<div class="id">{{ i }}</div>
+		<div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
+		<button class="delete" (click)="deleteYorum(i)">Remove</button>
+	</div>
+</div>

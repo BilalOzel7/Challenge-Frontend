@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+  <div class="container-fluid">
+    <a style="background-color: rgb(29, 135, 197);font-size: 24px"
+    class="navbar-brand"
+    class="btn btn-dark">Challenge Frontend</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['hakkimda']" routerLinkActive="router-link-active" style="font-size: 20px">Hakkımda</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['yapilanİsler']" routerLinkActive="router-link-active" style="font-size: 20px" >Yaptığım İşler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['yorumlar']" routerLinkActive="router-link-active" style="font-size: 20px">Yorumlar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['iletisim']" routerLinkActive="router-link-active" style="font-size: 20px">İletişim</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav> 
